@@ -1,0 +1,219 @@
+:root {
+  --primary-text-color: #000000;
+  --color-text: #212121;
+  --color-text-lighter: #757575;
+  --color-text-footer: rgba(255, 255, 255, 0.6);
+  --color-text-contrast: #ffffff;
+  --background-color: #ffffff;
+  --background-color-dark: #2f303a;
+  --background-color-command: #f5f4fa;
+  --background-hero-btn-change: #188ce8;
+  --link-color-change: #2196f3;
+}
+body {
+  color: var(--primary-text-color);
+  background: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style-type: none;
+}
+
+.current.site-nav-link .link {
+  color: var(--link-color-change);
+}
+
+.site-nav,
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+footer {
+  background-color: var(--background-color-dark);
+}
+/*portfolio*/
+
+.button {
+  font-family: inherit;
+}
+/*index-portfolio*/
+.hero-button,
+.filter-button {
+  cursor: pointer;
+}
+/*index*/
+.hero-button {
+  color: var(--color-text-contrast);
+  background-color: var(--link-color-change);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--color-text-contrast);
+  background-color: var(--background-hero-btn-change);
+}
+
+/*portfolio*/
+.filter-button {
+  color: var(--color-text);
+  background-color: var(--background-color-command);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--color-text-contrast);
+  background-color: var(--link-color-change);
+}
+/*index-portfolio*/
+.logo {
+  color: var(--link-color-change);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+/*index-portfolio*/
+
+.logo-header {
+  color: var(--primary-text-color);
+}
+
+.logo-footer {
+  color: var(--color-text-contrast);
+}
+/*index*/
+.site-nav-link .link {
+  color: var(--color-text);
+}
+.contacts-link .link {
+  color: var(--color-text-lighter);
+}
+.adress-link .link {
+  font-style: normal;
+  color: var(--color-text-footer);
+}
+.site-nav-link .link:hover,
+.site-nav-link .link:focus,
+.contacts-link .link:hover,
+.contacts-link .link:focus,
+.adress-link .link:hover,
+.adress-link .link:focus {
+  color: var(--link-color-change);
+}
+
+.adress {
+  color: var(--color-text-contrast);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+/*index*/
+.hero {
+  color: var(--color-text-contrast);
+  background: var(--background-color-dark);
+  text-align: center;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/*index*/
+
+.command {
+  background-color: var(--background-color-command);
+}
+.our-command-item {
+  background-color: var(--background-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.our-peculiarities-header,
+.our-peculiarities-text {
+  text-align: left;
+}
+
+.our-peculiarities-title {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.our-peculiarities-text {
+  color: var(--color-text-lighter);
+  font-size: 14px;
+  line-height: calc (24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.what-are-we-doing-header,
+.our-command-header {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+}
+
+.our-command-title {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc (19 / 16);
+  letter-spacing: 0.03em;
+}
+.our-command-text {
+  color: var(--color-text-lighter);
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  letter-spacing: 0.03em;
+}
+
+.works-examples-title {
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+.works-examples-title:hover,
+.works-examples-title:focus {
+  color: var(--link-color-change);
+}
+
+.works-examples-text {
+  color: var(--color-text);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+}
