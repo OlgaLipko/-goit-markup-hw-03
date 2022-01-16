@@ -10,6 +10,15 @@
   --background-hero-btn-change: #188ce8;
   --link-color-change: #2196f3;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: var(--primary-text-color);
   background: var(--background-color);
@@ -216,4 +225,24 @@ footer {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+.body-index,
+.body-portfolio,
+.page-header,
+.hero,
+.peculiarities,
+.visually-hidden,
+.our-peculiarities,
+.our-peculiarities-column,
+.what-are-we-doing,
+.what-are-we-doing-header,
+.images-what-are-we-doing .list,
+.command,
+.our-command-item,
+.footer,
+footer,
+.button-list .list,
+.works-examples,
+.works-examples-item {
+  outline: 2px solid tomato;
 }
