@@ -11,14 +11,7 @@
   --link-color-change: #2196f3;
 }
 /*-resrt-*/
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 p,
 h1,
 h2,
@@ -32,31 +25,39 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 /*-resrt-*/
-
-body {
-  color: var(--primary-text-color);
-  background: var(--background-color);
-  font-family: 'Roboto', sans-serif;
-}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
+body {
+  color: var(--primary-text-color);
+  background: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+}
+
 .link {
   text-decoration: none;
 }
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .current.site-nav-link .link {
   color: var(--link-color-change);
+}
+
+.page-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .site-nav,
@@ -65,9 +66,23 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  display: flex;
 }
 
-footer {
+.site-nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts-link + .contacts-link {
+  margin-left: 50px;
+}
+
+.footer {
   background-color: var(--background-color-dark);
 }
 /*portfolio*/
@@ -90,6 +105,7 @@ footer {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
+  border: 0;
   border-radius: 4px;
 }
 .hero-button:hover,
@@ -123,6 +139,7 @@ footer {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 93px;
 }
 /*index-portfolio*/
 
@@ -171,6 +188,7 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 /*index*/
 
 .command {
@@ -252,6 +270,11 @@ footer {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
 }
+.page-header {
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+
 .body-index,
 .body-portfolio,
 .page-header,
