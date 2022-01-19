@@ -34,6 +34,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
+  margin-right: auto;
 }
 body {
   color: var(--primary-text-color);
@@ -54,7 +55,8 @@ body {
   color: var(--link-color-change);
 }
 
-.page-header-nav {
+.container-header-nav,
+.header-nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,6 +84,87 @@ body {
   margin-left: 50px;
 }
 
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+
+.button-container-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.button-list {
+  display: flex;
+}
+.filter-btn-item + .filter-btn-item {
+  margin-left: 8px;
+}
+.filter-button {
+  padding: 8px 22px;
+}
+.button-container-cards {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.works-examples-item {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid var(--background-color-command);
+  border-left: 1px solid var(--background-color-command);
+  border-right: 1px solid var(--background-color-command);
+  margin: 15px;
+}
+
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+.peculiarities-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 94px;
+}
+.our-peculiarities {
+  display: flex;
+}
+
+.our-peculiarities-column + .our-peculiarities-column {
+  margin-right: 30px;
+}
+.our-peculiarities-column {
+  width: 270px;
+}
+
+.doing-cards {
+  display: flex;
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+}
+.doing-cards:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+/*portfolio*/
+
 .footer {
   background-color: var(--background-color-dark);
 }
@@ -94,6 +177,8 @@ body {
 .hero-button,
 .filter-button {
   cursor: pointer;
+  border: 0;
+  border-radius: 4px;
 }
 /*index*/
 .hero-button {
@@ -105,8 +190,6 @@ body {
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   padding: 10px 32px 10px 32px;
-  border: 0;
-  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -182,6 +265,12 @@ body {
   color: var(--color-text-contrast);
   background: var(--background-color-dark);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 89px;
+}
+
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -220,6 +309,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .our-peculiarities-text {
   color: var(--color-text-lighter);
@@ -235,6 +325,8 @@ body {
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .our-command-title {
@@ -275,6 +367,8 @@ body {
   margin-bottom: 25px;
 }
 
+.button-container-btn,
+.button-container-cards,
 .body-index,
 .body-portfolio,
 .page-header,
@@ -290,7 +384,7 @@ body {
 .our-command-item,
 .footer,
 footer,
-.button-list .list,
+.button-list,
 .works-examples,
 .works-examples-item {
   outline: 2px solid tomato;
