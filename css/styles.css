@@ -106,21 +106,29 @@ body {
 }
 .button-container-cards {
   display: flex;
-  flex-wrap: wrap; 
   padding-bottom: 94px;
- 
+  margin-left: -30px;
+  margin-right: -30px;
 }
 
 .works-examples-item {
-  display: flex;
-  text-align: center;
+  width: 30%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
   border-bottom: 1px solid var(--background-color-command);
   border-left: 1px solid var(--background-color-command);
   border-right: 1px solid var(--background-color-command);
-  margin: 15px;
- 
-}
+  }
 
+  .works-examples-title{
+    margin-bottom: 4px;
+  }
+ 
+.works-examples-title,
+.works-examples-text{
+  padding: 0px 24px 20px;
+}
 
 .peculiarities-list {
   display: flex;
@@ -261,7 +269,7 @@ body {
   letter-spacing: 0.03em;
   padding-bottom: 9px;
 }
-
+/*index*/
 .hero {
   background: var(--background-color-dark);
   text-align: center;
@@ -282,6 +290,7 @@ body {
   margin-right: auto;
 }
 
+/*index*/
 
 .command {
   background-color: var(--background-color-command);
@@ -394,7 +403,7 @@ body {
 }
 
 .works-examples-text {
-  color: var(--color-text);
+  color: var(--color-text-lighter);
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
