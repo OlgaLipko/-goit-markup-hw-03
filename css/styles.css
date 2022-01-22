@@ -213,7 +213,7 @@ body {
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
 }
-
+.active-button,
 .filter-button:hover,
 .filter-button:focus {
   color: var(--color-text-contrast);
